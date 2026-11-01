@@ -76,6 +76,7 @@ Server: Kestrel
 
 Summary function:
 
+```
 void createSalesSummaryFile(string salesSummaryDir, IEnumerable<string> salesFiles, double salesTotal, string currentDirectory)
 {
 StringBuilder summary = new StringBuilder($"Sales Summary{Environment.NewLine}");
@@ -106,3 +107,4 @@ summary.Append($"Total Sales: {salesTotal:C}{Environment.NewLine}{Environment.Ne
     File.WriteAllText(fileName,summary.ToString());
 
 }
+```
